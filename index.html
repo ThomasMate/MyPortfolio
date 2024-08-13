@@ -5,161 +5,165 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="homepage is-preload">
+	<body class="is-preload landing">
 		<div id="page-wrapper">
 
 			<!-- Header -->
-				<section id="header">
+				<header id="header">
+					<h1 id="logo"><a href="index.html">Tom Mate</a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="#portfolio">Portfolio</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</nav>
+				</header>
 
-					<!-- Logo -->
-						<h1><a href="index.html">Tom Mate</a></h1>
-
-					<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<li class="current"><a href="index.html">Home</a></li>
-								<li><a href="#portfolio">Portfolio</a></li>
-								<li><a href="#contact">Contact</a></li>
-							</ul>
-						</nav>
-
-					<!-- Banner -->
-						<section id="banner">
-							<header>
-								<h2>Hello, I'm Tom Mate</h2>
-								<p>Experienced Developer available for contracting or personal endeavors.</p>
-							</header>
-						</section>
-
-					<!-- Intro -->
-						<section id="intro" class="container">
-							<div class="row">
-								<div class="col-4 col-12-medium">
-									<section class="first">
-										<i class="icon solid featured fa-code"></i>
-										<header>
-											<h2>Programming Languages</h2>
-										</header>
-										<p>Proficient in Python, JavaScript, C++, Java, and more. I can handle backend and frontend development tasks efficiently.</p>
-									</section>
-								</div>
-								<div class="col-4 col-12-medium">
-									<section class="middle">
-										<i class="icon solid featured alt fa-mobile-alt"></i>
-										<header>
-											<h2>Mobile & Web Development</h2>
-										</header>
-										<p>Creating responsive and user-friendly mobile and web applications with modern technologies like React, Angular, and Flutter.</p>
-									</section>
-								</div>
-								<div class="col-4 col-12-medium">
-									<section class="last">
-										<i class="icon solid featured alt2 fa-database"></i>
-										<header>
-											<h2>Database Management</h2>
-										</header>
-										<p>Experience with SQL, NoSQL, database design, and management, ensuring data integrity and performance optimization.</p>
-									</section>
-								</div>
-							</div>
-							<footer>
-								<ul class="actions">
-									<li><a href="#contact" class="button large">Get in Touch</a></li>
-									<li><a href="#portfolio" class="button alt large">See My Work</a></li>
-								</ul>
-							</footer>
-						</section>
-
+			<!-- Banner -->
+				<section id="banner">
+					<div class="content">
+						<header>
+							<h2>Welcome to My Portfolio</h2>
+							<p>Experienced Developer available for contracting or personal endeavors.<br />
+							Explore my projects and get in touch!</p>
+						</header>
+						<span class="image"><img src="images/banner.jpg" alt="Banner Image" /></span>
+					</div>
+					<a href="#one" class="goto-next scrolly">Next</a>
 				</section>
 
-			<!-- Main -->
-				<section id="main">
-					<div class="container">
-						<div class="row">
-							<div class="col-12">
-
-								<!-- Portfolio -->
-									<section id="portfolio">
-										<header class="major">
-											<h2>My Portfolio</h2>
-										</header>
-										<div class="row">
-											<div class="col-4 col-6-medium col-12-small">
-												<section class="box">
-													<a href="#" class="image featured"><img src="images/project1.jpg" alt="Project 1" /></a>
-													<header>
-														<h3>Project Name</h3>
-													</header>
-													<p>A brief description of the project, the technologies used, and its purpose.</p>
-													<footer>
-														<ul class="actions">
-															<li><a href="#" class="button alt">View Project</a></li>
-														</ul>
-													</footer>
-												</section>
-											</div>
-											<!-- Add more projects here -->
-										</div>
-									</section>
-
+			<!-- One -->
+				<section id="one" class="spotlight style1 bottom">
+					<span class="image fit main"><img src="images/skills.jpg" alt="Skills Image" /></span>
+					<div class="content">
+						<div class="container">
+							<div class="row">
+								<div class="col-4 col-12-medium">
+									<header>
+										<h2>Programming Languages</h2>
+										<p>Proficient in multiple languages including Python, JavaScript, C++, and Java.</p>
+									</header>
+								</div>
+								<div class="col-4 col-12-medium">
+									<p>I have extensive experience in both backend and frontend development. My skills include creating efficient, scalable code and designing user-friendly interfaces.</p>
+								</div>
+								<div class="col-4 col-12-medium">
+									<p>I am available for contracting and personal projects. Let’s work together to build something amazing!</p>
+								</div>
 							</div>
 						</div>
+					</div>
+					<a href="#two" class="goto-next scrolly">Next</a>
+				</section>
+
+			<!-- Two -->
+				<section id="two" class="spotlight style2 right">
+					<span class="image fit main"><img src="images/portfolio.jpg" alt="Portfolio Image" /></span>
+					<div class="content">
+						<header>
+							<h2>My Portfolio</h2>
+							<p>A showcase of some of the projects I have worked on.</p>
+						</header>
+						<p>From web applications to mobile apps, I have worked on a diverse range of projects. Below are a few examples of my work.</p>
+						<ul class="actions">
+							<li><a href="#portfolio" class="button">View Portfolio</a></li>
+						</ul>
+					</div>
+					<a href="#three" class="goto-next scrolly">Next</a>
+				</section>
+
+			<!-- Three -->
+				<section id="three" class="spotlight style3 left">
+					<span class="image fit main bottom"><img src="images/contact.jpg" alt="Contact Image" /></span>
+					<div class="content">
+						<header>
+							<h2>Contact Me</h2>
+							<p>Get in touch to discuss potential projects or collaborations.</p>
+						</header>
+						<p>If you are interested in working with me or would like to know more about what I can offer, feel free to reach out!</p>
+						<ul class="actions">
+							<li><a href="#contact" class="button">Contact</a></li>
+						</ul>
+					</div>
+					<a href="#four" class="goto-next scrolly">Next</a>
+				</section>
+
+			<!-- Portfolio Section -->
+				<section id="portfolio" class="wrapper style1 special fade-up">
+					<div class="container">
+						<header class="major">
+							<h2>My Portfolio</h2>
+							<p>Here are some of the projects I have worked on.</p>
+						</header>
+						<div class="box alt">
+							<div class="row gtr-uniform">
+								<section class="col-4 col-6-medium col-12-xsmall">
+									<span class="image fit"><img src="images/project1.jpg" alt="Project 1" /></span>
+									<h3>Project Name 1</h3>
+									<p>A brief description of the project.</p>
+								</section>
+								<section class="col-4 col-6-medium col-12-xsmall">
+									<span class="image fit"><img src="images/project2.jpg" alt="Project 2" /></span>
+									<h3>Project Name 2</h3>
+									<p>A brief description of the project.</p>
+								</section>
+								<section class="col-4 col-6-medium col-12-xsmall">
+									<span class="image fit"><img src="images/project3.jpg" alt="Project 3" /></span>
+									<h3>Project Name 3</h3>
+									<p>A brief description of the project.</p>
+								</section>
+								<!-- Add more projects here -->
+							</div>
+						</div>
+						<footer class="major">
+							<ul class="actions special">
+								<li><a href="#contact" class="button">Get in Touch</a></li>
+							</ul>
+						</footer>
+					</div>
+				</section>
+
+			<!-- Contact Section -->
+				<section id="contact" class="wrapper style2 special fade">
+					<div class="container">
+						<header>
+							<h2>Contact Me</h2>
+							<p>Let's discuss how I can help with your project.</p>
+						</header>
+						<form method="post" action="#" class="cta">
+							<div class="row gtr-uniform gtr-50">
+								<div class="col-8 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Your Email Address" /></div>
+								<div class="col-4 col-12-xsmall"><input type="submit" value="Get in Touch" class="fit primary" /></div>
+							</div>
+						</form>
 					</div>
 				</section>
 
 			<!-- Footer -->
-				<section id="footer">
-					<div class="container">
-						<div class="row">
-							<div class="col-8 col-12-medium">
-								<section>
-									<header>
-										<h2>Contact Me</h2>
-									</header>
-									<ul class="contact">
-										<li>
-											<h3>Mail</h3>
-											<p><a href="mailto:tom.mate@example.com">tom.mate@example.com</a></p>
-										</li>
-										<li>
-											<h3>Phone</h3>
-											<p>(Your Phone Number)</p>
-										</li>
-									</ul>
-								</section>
-							</div>
-							<div class="col-4 col-12-medium">
-								<section>
-									<header>
-										<h2>Connect with Me</h2>
-									</header>
-									<ul class="social">
-										<li><a class="icon brands fa-linkedin-in" href="https://www.linkedin.com/in/tommate"><span class="label">LinkedIn</span></a></li>
-										<li><a class="icon brands fa-github" href="https://github.com/tommate"><span class="label">GitHub</span></a></li>
-										<!-- Add other social links -->
-									</ul>
-								</section>
-							</div>
-							<div class="col-12">
-
-								<!-- Copyright -->
-									<div id="copyright">
-										<ul class="links">
-											<li>&copy; Tom Mate. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-										</ul>
-									</div>
-
-							</div>
-						</div>
-					</div>
-				</section>
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="https://twitter.com" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://facebook.com" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="https://linkedin.com/in/tommate" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://instagram.com" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="https://github.com/tommate" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="mailto:tom.mate@example.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Tom Mate. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</footer>
 
 		</div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
