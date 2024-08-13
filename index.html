@@ -6,6 +6,39 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Custom Styles for Enhanced Portfolio */
+			#header {
+				background-color: #282c34;
+			}
+			#header #logo a {
+				color: #61dafb;
+			}
+			.button {
+				background-color: #61dafb;
+				border: none;
+				color: #282c34;
+			}
+			.button.primary:hover {
+				background-color: #21a1f1;
+			}
+			.image:hover {
+				transform: scale(1.05);
+				transition: transform 0.3s ease-in-out;
+			}
+			#portfolio .box:hover {
+				background-color: #f7f7f7;
+				transition: background-color 0.3s ease-in-out;
+			}
+			/* Footer Customization */
+			#footer {
+				background-color: #282c34;
+				color: #ffffff;
+			}
+			#footer .icons a {
+				color: #61dafb;
+			}
+		</style>
 	</head>
 	<body class="is-preload landing">
 		<div id="page-wrapper">
@@ -17,6 +50,7 @@
 						<ul>
 							<li><a href="index.html">Home</a></li>
 							<li><a href="#portfolio">Portfolio</a></li>
+							<li><a href="#about">About</a></li>
 							<li><a href="#contact">Contact</a></li>
 						</ul>
 					</nav>
@@ -26,13 +60,13 @@
 				<section id="banner">
 					<div class="content">
 						<header>
-							<h2>Welcome to My Portfolio</h2>
-							<p>Experienced Developer available for contracting or personal endeavors.<br />
-							Explore my projects and get in touch!</p>
+							<h2>Crafting Code with Precision</h2>
+							<p>Innovative solutions for modern challenges.<br />
+							Learn about my journey and explore my work.</p>
 						</header>
 						<span class="image"><img src="images/banner.jpg" alt="Banner Image" /></span>
 					</div>
-					<a href="#one" class="goto-next scrolly">Next</a>
+					<a href="#one" class="goto-next scrolly">Explore</a>
 				</section>
 
 			<!-- One -->
@@ -43,60 +77,25 @@
 							<div class="row">
 								<div class="col-4 col-12-medium">
 									<header>
-										<h2>Programming Languages</h2>
-										<p>Proficient in multiple languages including Python, JavaScript, C++, and Java.</p>
+										<h2>My Expertise</h2>
+										<p>Bringing ideas to life with code</p>
 									</header>
 								</div>
-								<div class="col-4 col-12-medium">
-									<p>I have extensive experience in both backend and frontend development. My skills include creating efficient, scalable code and designing user-friendly interfaces.</p>
-								</div>
-								<div class="col-4 col-12-medium">
-									<p>I am available for contracting and personal projects. Let’s work together to build something amazing!</p>
+								<div class="col-8 col-12-medium">
+									<p>I specialize in full-stack development, with extensive experience in various programming languages and frameworks. My goal is to create scalable, user-friendly applications that meet the client's needs. Whether it's frontend design or backend architecture, I deliver high-quality results every time.</p>
 								</div>
 							</div>
 						</div>
 					</div>
-					<a href="#two" class="goto-next scrolly">Next</a>
+					<a href="#portfolio" class="goto-next scrolly">My Work</a>
 				</section>
 
-			<!-- Two -->
-				<section id="two" class="spotlight style2 right">
-					<span class="image fit main"><img src="images/portfolio.jpg" alt="Portfolio Image" /></span>
-					<div class="content">
-						<header>
-							<h2>My Portfolio</h2>
-							<p>A showcase of some of the projects I have worked on.</p>
-						</header>
-						<p>From web applications to mobile apps, I have worked on a diverse range of projects. Below are a few examples of my work.</p>
-						<ul class="actions">
-							<li><a href="#portfolio" class="button">View Portfolio</a></li>
-						</ul>
-					</div>
-					<a href="#three" class="goto-next scrolly">Next</a>
-				</section>
-
-			<!-- Three -->
-				<section id="three" class="spotlight style3 left">
-					<span class="image fit main bottom"><img src="images/contact.jpg" alt="Contact Image" /></span>
-					<div class="content">
-						<header>
-							<h2>Contact Me</h2>
-							<p>Get in touch to discuss potential projects or collaborations.</p>
-						</header>
-						<p>If you are interested in working with me or would like to know more about what I can offer, feel free to reach out!</p>
-						<ul class="actions">
-							<li><a href="#contact" class="button">Contact</a></li>
-						</ul>
-					</div>
-					<a href="#four" class="goto-next scrolly">Next</a>
-				</section>
-
-			<!-- Portfolio Section -->
-				<section id="portfolio" class="wrapper style1 special fade-up">
+			<!-- Portfolio -->
+				<section id="portfolio" class="wrapper style2 special fade-up">
 					<div class="container">
 						<header class="major">
-							<h2>My Portfolio</h2>
-							<p>Here are some of the projects I have worked on.</p>
+							<h2>Featured Projects</h2>
+							<p>Explore some of my recent work</p>
 						</header>
 						<div class="box alt">
 							<div class="row gtr-uniform">
@@ -104,25 +103,67 @@
 									<span class="image fit"><img src="images/project1.jpg" alt="Project 1" /></span>
 									<h3>Project Name 1</h3>
 									<p>A brief description of the project.</p>
+									<a href="#" class="button small">View Details</a>
 								</section>
 								<section class="col-4 col-6-medium col-12-xsmall">
 									<span class="image fit"><img src="images/project2.jpg" alt="Project 2" /></span>
 									<h3>Project Name 2</h3>
 									<p>A brief description of the project.</p>
+									<a href="#" class="button small">View Details</a>
 								</section>
 								<section class="col-4 col-6-medium col-12-xsmall">
 									<span class="image fit"><img src="images/project3.jpg" alt="Project 3" /></span>
 									<h3>Project Name 3</h3>
 									<p>A brief description of the project.</p>
+									<a href="#" class="button small">View Details</a>
 								</section>
 								<!-- Add more projects here -->
 							</div>
 						</div>
 						<footer class="major">
 							<ul class="actions special">
-								<li><a href="#contact" class="button">Get in Touch</a></li>
+								<li><a href="resume.pdf" class="button">Download My Resume</a></li>
 							</ul>
 						</footer>
+					</div>
+				</section>
+
+			<!-- About Section -->
+				<section id="about" class="spotlight style3 left">
+					<span class="image fit main bottom"><img src="images/about.jpg" alt="About Image" /></span>
+					<div class="content">
+						<header>
+							<h2>About Me</h2>
+							<p>A little bit about my journey</p>
+						</header>
+						<p>With a background in computer science and years of hands-on experience, I've had the privilege to work on diverse projects across multiple industries. My passion for technology drives me to constantly learn and adapt to the ever-evolving landscape of software development.</p>
+						<ul class="actions">
+							<li><a href="#contact" class="button">Get in Touch</a></li>
+						</ul>
+					</div>
+				</section>
+
+			<!-- Testimonials Section -->
+				<section id="testimonials" class="wrapper style1 special fade-up">
+					<div class="container">
+						<header class="major">
+							<h2>Testimonials</h2>
+							<p>What my clients say</p>
+						</header>
+						<div class="box alt">
+							<div class="row gtr-uniform">
+								<section class="col-6 col-12-medium">
+									<span class="icon solid alt major fa-quote-left"></span>
+									<blockquote>"Tom Mate is a consummate professional who consistently delivers exceptional work. His attention to detail and commitment to excellence is unmatched."</blockquote>
+									<p>- Client Name</p>
+								</section>
+								<section class="col-6 col-12-medium">
+									<span class="icon solid alt major fa-quote-left"></span>
+									<blockquote>"Working with Tom was a fantastic experience. He took our ideas and turned them into a functional, beautiful product. Highly recommended!"</blockquote>
+									<p>- Client Name</p>
+								</section>
+							</div>
+						</div>
 					</div>
 				</section>
 
@@ -131,11 +172,11 @@
 					<div class="container">
 						<header>
 							<h2>Contact Me</h2>
-							<p>Let's discuss how I can help with your project.</p>
+							<p>Let's discuss your next project</p>
 						</header>
 						<form method="post" action="#" class="cta">
 							<div class="row gtr-uniform gtr-50">
-								<div class="col-8 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Your Email Address" /></div>
+								<div class="col-8 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Your Email Address" required /></div>
 								<div class="col-4 col-12-xsmall"><input type="submit" value="Get in Touch" class="fit primary" /></div>
 							</div>
 						</form>
