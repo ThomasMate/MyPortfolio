@@ -117,10 +117,14 @@
         // Call the function to track page loads
         trackPageLoads();
 
-        // Optional: Add a delay before redirecting to another page (e.g., your GitHub profile)
-        setTimeout(function() {
-            window.location.href = "https://thomasmate.github.io/MyPortfolio/";
-        }, 3000); // Redirects after 3 seconds
+        // Prevent redirect loop by checking if the page has already been redirected
+        if (!localStorage.getItem('hasRedirected')) {
+            setTimeout(function() {
+                // Set a flag to prevent further redirects
+                localStorage.setItem('hasRedirected', 'true');
+                window.location.href = "https://thomasmate.github.io/MyPortfolio/";
+            }, 3000); // Redirects after 3 seconds
+        }
     </script>
 
 </body>
