@@ -226,28 +226,40 @@
 
 			<!-- Page Load Counter Script -->
 			<script>
-				async function fetchPageLoadCount() {
-					try {
-						// Fetch the current count from the API
-						const response = await fetch('https://viewapi.onrender.com/api/get_count');
-						const data = await response.json();
-
-						// Display the counter on the page
-						document.getElementById('counter').textContent = data.count;
-
-						// Increment the count by making a POST request
-						await fetch('https://viewapi.onrender.com/api/increment_count', { method: 'POST' });
-					} catch (error) {
-						console.error("Error fetching the page load count:", error);
-					}
-				}
-
-				document.addEventListener('DOMContentLoaded', function() {
-					if (document.getElementById('counter')) {
-						fetchPageLoadCount();
-					}
-				});
+			    async function fetchPageLoadCount() {
+			        try {
+			            // Fetch the current count from the API
+			            const response = await fetch('https://viewapi.onrender.com/api/get_count');
+			            const data = await response.json();
+			
+			            // Display the counter on the page
+			            document.getElementById('counter').textContent = data.count;
+			        } catch (error) {
+			            console.error("Error fetching the page load count:", error);
+			        }
+			    }
+			
+			    async function incrementPageLoadCount() {
+			        try {
+			            // Increment the count by making a POST request
+			            await fetch('https://viewapi.onrender.com/api/increment_count', { method: 'POST' });
+			        } catch (error) {
+			            console.error("Error incrementing the page load count:", error);
+			        }
+			    }
+			
+			    document.addEventListener('DOMContentLoaded', function() {
+			        if (document.getElementById('counter')) {
+			            // Fetch the initial count and increment the count
+			            fetchPageLoadCount();
+			            incrementPageLoadCount();
+			
+			            // Set up an interval to refresh the count every 5 seconds (5000 milliseconds)
+			            setInterval(fetchPageLoadCount, 5000);
+			        }
+			    });
 			</script>
+
 
 	</body>
 </html>
