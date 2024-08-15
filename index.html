@@ -80,7 +80,7 @@
 					<div class="container">
 						<header class="major">
 							<h2>Tom's Views</h2>
-							<p><span id="counter">0</span> Other's Have Also Seen My Page.</p>
+							<p><span id="counter">0</span> Others Have Also Seen My Page.</p>
 						</header>
 					</div>
 				</section>
@@ -226,20 +226,20 @@
 
 			<!-- Page Load Counter Script -->
 			<script>
-				// Function to track page loads and display count
-				function trackPageLoads() {
-					let loadCount = localStorage.getItem('pageLoadCount') || 0;
-					loadCount = parseInt(loadCount) + 1;
-					localStorage.setItem('pageLoadCount', loadCount);
-					document.getElementById('counter').textContent = loadCount;
+				// Fetch and update the global view count from the server
+				function updateViewCount() {
+					$.ajax({
+						url: 'views.php',  // Replace with the URL to your PHP backend
+						method: 'GET',
+						dataType: 'json',
+						success: function(response) {
+							document.getElementById('counter').textContent = response.count;
+						}
+					});
 				}
 
-				// Ensure the counter section exists and then call trackPageLoads
-				document.addEventListener('DOMContentLoaded', function() {
-					if (document.getElementById('counter')) {
-						trackPageLoads();
-					}
-				});
+				// Call the update function on page load
+				document.addEventListener('DOMContentLoaded', updateViewCount);
 			</script>
 
 	</body>
