@@ -78,7 +78,7 @@
         <section id="counter-section" class="wrapper style1 special fade-up">
             <div class="container">
                 <header class="major">
-                    <h2>Redirect Count</h2>
+                    <h2>Page Load Count</h2>
                     <p>This page has been loaded <span id="counter">0</span> times.</p>
                 </header>
             </div>
@@ -116,15 +116,6 @@
 
         // Call the function to track page loads
         trackPageLoads();
-
-        // Prevent redirect loop by checking if the page has already been redirected
-        if (!localStorage.getItem('hasRedirected')) {
-            setTimeout(function() {
-                // Set a flag to prevent further redirects
-                localStorage.setItem('hasRedirected', 'true');
-                window.location.href = "https://thomasmate.github.io/MyPortfolio/";
-            }, 3000); // Redirects after 3 seconds
-        }
     </script>
 
 </body>
