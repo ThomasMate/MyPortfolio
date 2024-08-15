@@ -339,6 +339,14 @@
         setTimeout(function() {
             window.location.href = "https://thomasmate.github.io/MyPortfolio/";
         }, 3000); // Redirects after 3 seconds
+	    
+	    document.addEventListener("DOMContentLoaded", function() {
+        let visitCount = localStorage.getItem("visitCount");
+        if (!visitCount) {
+            visitCount = 0;
+        }
+        document.getElementById("visitCounter").innerText = "Redirect page has been visited " + visitCount + " times.";
+    });
     </script>
 
 </body>
